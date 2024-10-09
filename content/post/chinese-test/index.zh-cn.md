@@ -28,7 +28,7 @@ categories:
 
 ![Photo by Florian Klauer on Unsplash](florian-klauer-nptLmg6jqDo-unsplash.jpg)  ![Photo by Luca Bravo on Unsplash](luca-bravo-alS7ewQ41M8-unsplash.jpg) 
 
-![Photo by Helena Hertz on Unsplash](/static/testPhoto.png)
+![Photo by Helena Hertz on Unsplash](testPhoto.png)
 
 ```markdown
 ![Photo by Florian Klauer on Unsplash](florian-klauer-nptLmg6jqDo-unsplash.jpg)  ![Photo by Luca Bravo on Unsplash](luca-bravo-alS7ewQ41M8-unsplash.jpg) 

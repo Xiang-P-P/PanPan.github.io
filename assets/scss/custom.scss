@@ -1,5 +1,17 @@
 /* 将你的自定义 SCSS 放在 HUGO_SITE_FOLDER/assets/scss/custom.scss */
 
+// 字体
+body, .article-content {
+  font-family: "'HarmonyOS_Regular", sans-serif;
+}
+
+//鼠标指针自定义，放在`static/img`内或者引用外部网站链接。
+body{cursor:url(https://cdn.jsdelivr.net/gh/Tomotoes/images/blog/default.cur), default;} //默认时的鼠标样式
+a:hover{cursor:url(https://cdn.jsdelivr.net/gh/Tomotoes/images/blog/default.cur), pointer;} //指向链接时的鼠标样式
+button:hover {cursor: url(''), pointer;} //代码复制按钮
+input {cursor: url(''), text;} //评论框
+// 如 {cursor: url('https://cdn.jsdelivr.net/gh/Tomotoes/images/blog/default.cur'), default;}
+
 
 // 页面基本配色
 :root {

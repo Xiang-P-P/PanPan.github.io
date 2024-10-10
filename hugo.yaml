@@ -88,7 +88,7 @@ params:
 
     comments:
         enabled: true
-        provider: disqus
+        provider: waline
         # 是否开启评论
         disqusjs:
             shortname:
@@ -124,17 +124,20 @@ params:
         # Waline client configuration see: https://waline.js.org/en/reference/component.html
         waline:
             serverURL: https://waline-swart-rho.vercel.app/
-            lang:
-            pageview:
+            lang: zh-CN
+            visitor: false
+            avatar:
             emoji:
-                - https://unpkg.com/@waline/emojis@1.0.1/weibo
+                - https://cdn.jsdelivr.net/gh/walinejs/emojis/qq
+                - https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus
+                - https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili
             requiredMeta:
                 - name
                 - email
                 - url
+            placeholder:
             locale:
-                admin: Admin
-                placeholder:
+                admin: 博主
 
         twikoo:
             envId:

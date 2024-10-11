@@ -5,12 +5,40 @@ body, .article-content {
   font-family: "'HarmonyOS_Regular", sans-serif;
 }
 
-//鼠标指针自定义，放在`static/img`内或者引用外部网站链接。
-body{cursor:url(https://cdn.jsdelivr.net/gh/Tomotoes/images/blog/default.cur), default;} //默认时的鼠标样式
-a:hover{cursor:url(https://cdn.jsdelivr.net/gh/Tomotoes/images/blog/default.cur), pointer;} //指向链接时的鼠标样式
-button:hover {cursor: url(''), pointer;} //代码复制按钮
-input {cursor: url(''), text;} //评论框
-// 如 {cursor: url('https://cdn.jsdelivr.net/gh/Tomotoes/images/blog/default.cur'), default;}
+// //鼠标指针自定义，放在`static/img`内或者引用外部网站链接。
+// body{cursor:url(https://cdn.jsdelivr.net/gh/Tomotoes/images/blog/default.cur), default;} //默认时的鼠标样式
+// a:hover{cursor:url(https://cdn.jsdelivr.net/gh/Tomotoes/images/blog/default.cur), pointer;} //指向链接时的鼠标样式
+// button:hover {cursor: url(''), pointer;} //代码复制按钮
+// input {cursor: url(''), text;} //评论框
+// // 如 {cursor: url('https://cdn.jsdelivr.net/gh/Tomotoes/images/blog/default.cur'), default;}
+
+// 自定义鼠标
+#cursor {
+  position: fixed;
+  width: 16px;
+  height: 16px;
+  background: #000;
+  border-radius: 8px;
+  opacity: 0.25;
+  z-index: 10086;
+  pointer-events: none;
+  transition: 0.2s ease-in-out;
+  transition-property: background, opacity, transform;
+}
+
+#cursor.hidden {
+  opacity: 0;
+}
+
+#cursor.hover {
+  opacity: 0.1;
+  transform: scale(2.5);
+}
+
+#cursor.active {
+  opacity: 0.5;
+  transform: scale(0.5);
+}
 
 
 // 页面基本配色
